@@ -1,0 +1,15 @@
+version: '3'
+services:
+  hello-world1:
+    build:
+      context: ./hello-world1
+      dockerfile: Dockerfile
+    ports:
+      - "5000:80"
+  
+  hello-world2:
+    build:
+      context: ./hello-world2
+      dockerfile: Dockerfile
+    ports:
+      - "5001:80"
